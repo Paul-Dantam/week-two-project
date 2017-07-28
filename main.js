@@ -20,12 +20,16 @@ function question1() {
 
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2() {
-  var pricepoint = []
+  var pricePoint = []
   for (var i = 0; i < data.length; i++) {
     if (data[i].price >= 14.00 && data[i].price <= 18.00) {
-      pricepoint.push(data[i].title)
+      pricePoint.push(data[i].title)
     }
-  } console.log(pricepoint.toString())
+
+  } for (var i in pricePoint) {
+    console.log(pricePoint[i]);
+  }
+
 
 }
 
@@ -48,7 +52,9 @@ function question4() {
     if (data[i].materials.includes("wood")) {
       wooden.push(data[i].title)
     }
-  } console.log(wooden.toString())
+  } for (var i in wooden) {
+    console.log(wooden[i] + "is made of wood.");
+  }
 }
 
 // 5: Which items are made of eight or more materials? 
