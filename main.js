@@ -5,7 +5,6 @@
 console.log(data);
 
 
-
 // 1: Show me how to calculate the average price of all items.
 function question1() {
   var prices = []
@@ -19,7 +18,6 @@ function question1() {
   console.log("The average price is $" + avgPrice.toFixed(2))
 }
 
-
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2() {
   var pricepoint = []
@@ -30,8 +28,6 @@ function question2() {
   } console.log(pricepoint.toString())
 
 }
-
-
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3() {
@@ -45,7 +41,6 @@ function question3() {
   } console.log(name + " costs " + price + " pounds.")
 }
 
-
 // 4: Display a list of all items who are made of wood.
 function question4() {
   var wooden = []
@@ -56,12 +51,8 @@ function question4() {
   } console.log(wooden.toString())
 }
 
-
 // 5: Which items are made of eight or more materials? 
 //    Display the name, number of items and the items it is made of.
-
-
-
 
 // function question5() {
 //   var name = []
@@ -83,6 +74,7 @@ function question5() {
   for (let i = 0; i < data.length; i++) {
     if (data[i].materials.length >= 8) {
       var theOcho = {};
+
       theOcho.title = data[i].title + ' has ' + data[i].materials.length + ' materials:';
       for (let k = 0; k < data[i].materials.length; k++) {
         theOcho.materialsList += ' - ' + data[i].materials[k] + '\n';
